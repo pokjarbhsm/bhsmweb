@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<title>Pokjar BHSM</title>
+<html lang="en-US">
+<meta charset="UTF-8">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Oswald"
+	}
+
+	body {
+		font-family: "Open Sans"
+	}
+
+	.mySlides {
+		display: none
+	}
+
+	.w3-tag,
+	.fa {
+		cursor: pointer
+	}
+
+	.w3-tag {
+		height: 15px;
+		width: 15px;
+		padding: 0;
+		margin-top: 6px
+	}
+
+	.w3-bar,
+	h1,
+	button {
+		font-family: "Montserrat", sans-serif
+	}
+
+	.fa-anchor,
+	.fa-coffee {
+		font-size: 200px
+	}
+
+</style>
+
+
+<body id="myPage">
+
+	<!-- Sidebar on click -->
+	<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+			<i class="fa fa-remove"></i>
+		</a>
+		<a href="index.html" class="w3-bar-item w3-button">BERANDA</a>
+		<a href="tentang_kami.html" class="w3-bar-item w3-button">TENTANG BHSM</a>
+		<a href="kontak_kami.html" class="w3-bar-item w3-button">KONTAK BHSM</a>
+		<a href="" class="w3-bar-item w3-button">Link 4</a>
+		<a href="#" class="w3-bar-item w3-button">Link 5</a>
+	</nav>
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-theme-d2 w3-left-align">
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Beranda</a>
+			<a href="tentang_kami.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tentang BHSM</a>
+			<a href="kontak_kami.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontak BHSM</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-button" title="Notifications">PROFILE <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+					<a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a>
+					<a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus </a>
+
+				</div>
+			</div>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-button" title="Notifications">PROFILE ALUMNI <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+
+					<a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a>
+					<a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a>
+					<a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a>
+					<a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a>
+					<a href="damar.html" class="w3-bar-item w3-button">Markhamah </a>
+					<a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a>
+					<a href="martun.html" class="w3-bar-item w3-button">Martun </a>
+					<a href="ayusalon.html" class="w3-bar-item w3-button">Sumiati </a>
+				</div>
+			</div>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-button" title="Notifications">Mandiri Sahabatku<i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+					<a href="kelas_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas MS</a>
+					<a href="pokjar_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pokjar MS</a>
+					<a href="korwil_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Korwil MS</a>
+					<a href="coding_mum.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coding Mum</a>
+				</div>
+			</div>
+
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-button" title="Notifications">Kegiatan <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+					<a href="kelas_komputer.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Komputer</a>
+					<a href="kelas_jahit.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Menjahit</a>
+					<a href="kelas_makeup.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Make Up</a>
+					<a href="kelas_brosmonte.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bros Acrylic</a>
+
+					<a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kerajinan Monte</a>
+					<a href="kelas_rajut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Rajut</a>
+					<a href="kelas_kuliner.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kuliner / Latbar </a>
+					<a href="kelas_bungasabun.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bunga Sabun</a>
+					<a href="kelas_bhs_inggris.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bahasa Inggris</a>
+					<a href="kelas_potongrambut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Potong Rambut</a>
+					<a href="kelas_spa.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Beauty & Spa </a>
+
+				</div>
+			</div>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-button" title="Notifications">Lain - Lain <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+					<a href="andriwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">WorkShop Menjahit Andrie Wo</a>
+					<a href="outbond.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Outbond</a>
+					<a href="cross_pokjar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cross Pokjar</a>
+					<a href="anniversary_laci.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Anniversary Laci</a>
+					<a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Penutupan MS Bacth 9 </a>
+					<a href="sosialisasi.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sosialisasi </a>
+					<a href="penutupan_ms_bacth11.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Penutupan MS Bacth XI </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar on small screens -->
+	<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+
+		<a href="tentang_kami.html" class="w3-bar-item w3-button">Tentang BHSM</a>
+		<a href="kontak_kami.html" class="w3-bar-item w3-button">Kontak BHSM</a>
+
+
+		<a href="#" class="w3-bar-item w3-button">PROFILE</a>
+		<ul>
+			<li> <a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a></li>
+			<li> <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus</a></li>
+		</ul>
+
+		<a href="#" class="w3-bar-item w3-button">PROFILE ALUMNI</a>
+		<ul>
+			<li><a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a></li>
+			<li><a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a></li>
+			<li><a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a></li>
+			<li><a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a></li>
+			<li><a href="damar.html" class="w3-bar-item w3-button">Markhamah </a></li>
+			<li><a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a></li>
+			<li><a href="martun.html" class="w3-bar-item w3-button">Martun </a></li>
+			<li><a href="ayusalon.html" class="w3-bar-item w3-button">Sumiati </a></li>
+		</ul>
+
+		<a href="#" class="w3-bar-item w3-button">Mandiri Sahabatku</a>
+		<ul>
+			<li> <a href="kelas_ms.html" class="w3-bar-item w3-button">Kelas MS</a></li>
+			<li> <a href="pokjar_ms.html" class="w3-bar-item w3-button">Pokjar MS</a></li>
+			<li> <a href="korwil_ms.html" class="w3-bar-item w3-button">Korwil MS</a></li>
+			<li> <a href="coding_mum.html" class="w3-bar-item w3-button">Coding Mum </a></li>
+		</ul>
+
+		<a href="#" class="w3-bar-item w3-button">Kegiatan</a>
+		<ul>
+			<li><a href="kelas_komputer.html" class="w3-bar-item w3-button ">Kelas Komputer</a></li>
+			<li><a href="kelas_jahit.html" class="w3-bar-item w3-button ">Kelas Menjahit</a></li>
+			<li><a href="kelas_makeup.html" class="w3-bar-item w3-button ">Kelas Make Up</a></li>
+			<li><a href="kelas_brosmonte.html" class="w3-bar-item w3-button ">Kelas Bros Acrylic</a></li>
+			<li><a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button ">Kelas Kerajinan Monte</a></li>
+			<li><a href="kelas_rajut.html" class="w3-bar-item w3-button ">Kelas Rajut</a></li>
+			<li><a href="kelas_kuliner.html" class="w3-bar-item w3-button ">Kelas Kuliner / Latbar </a></li>
+			<li><a href="kelas_bungasabun.html" class="w3-bar-item w3-button ">Kelas Bunga Sabun</a></li>
+			<li><a href="kelas_bhs_inggris.html" class="w3-bar-item w3-button ">Kelas Bahasa Inggris</a></li>
+			<li><a href="kelas_potongrambut.html" class="w3-bar-item w3-button ">Kelas Potong Rambut</a></li>
+			<li><a href="kelas_spa.html" class="w3-bar-item w3-button ">Kelas Beauty & Spa</a></li>
+		</ul>
+
+		<a href="#" class="w3-bar-item w3-button">Lain - Lain </a>
+		<ul>
+			<li><a href="andriwo.html" class="w3-bar-item w3-button ">WorkShop Menjahit Andrie Wo</a></li>
+			<li><a href="outbond.html" class="w3-bar-item w3-button ">Outbond</a></li>
+			<li><a href="cross_pokjar.html" class="w3-bar-item w3-button ">Cross Pokjar</a></li>
+			<li><a href="anniversary_laci.html" class="w3-bar-item w3-button ">Anniversary Laci</a></li>
+			<li><a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button">Penutupan MS Bacth 9 </a></li>
+			<li><a href="sosialisasi.html" class="w3-bar-item w3-button">Sosialisasi </a></li>
+			<li><a href="penutupan_ms_bacth11.html" class="w3-bar-item w3-button">Penutupan MS Bacth XI </a></li>
+		</ul>
+	</div>
+
+	<!---header--->
+
+
+	<div class="w3-content" style="max-width:100%;margin-top:30px;margin-bottom:30px;">
+
+		<!-- Slideshow -->
+		<div class="w3-container">
+			<div class="w3-display-container mySlides">
+				<img src="images/new_logo.jpeg" style="width:100% " height="500">
+				<div class="w3-display-topleft w3-container w3-padding-32">
+				</div>
+			</div>
+			
+			<div class="w3-display-container mySlides">
+				<img src="images/GH1.jpg"  style="width:100%" height="500">
+				<div class="w3-display-middle w3-container w3-padding-32">
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/ms10.jpg" S style="width:100%" height="500">
+				<div class="w3-display-middle w3-container w3-padding-32">
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/gd1.jpg" style="width:100%" height="500">
+				<div class="w3-display-topright w3-container w3-padding-32">
+				</div>
+			</div>
+
+
+			<div class="w3-display-container mySlides">
+				<img src="images/outbond2.jpeg" style="width:100%" height="500">
+				<div class="w3-display-topright w3-container w3-padding-32">
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="images/lebaran1.jpg" style="width:100%" height="500">
+				<div class="w3-display-topright w3-container w3-padding-32">
+				</div>
+			</div>
+			<div class="w3-display-container mySlides">
+				<img src="images/ms.jpg" style="width:100%" height="500">
+				<div class="w3-display-topright w3-container w3-padding-32">
+				</div>
+			</div>
+			<div class="w3-display-container mySlides">
+				<img src="images/batch11.jpg" style="width:100%" height="500">
+				<div class="w3-display-topright w3-container w3-padding-32">
+				</div>
+			</div>
+			<!-- Slideshow next/previous buttons -->
+			<div class="w3-container w3-black w3-padding w3-xlarge">
+				<div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+				<div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+				<div class="w3-center">
+					<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+					<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+					<span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-container w3-card-4 w3-grey" style="100px 16px;padding-top: 1px;margin-top:10px;margin-bottom:30px; ">
+		<div class="w3-row-padding-10px" w3-margin-top-20px>
+			<div class="w3-row-padding" id="about">
+				<div class="w3-center w3-padding-30">
+					<span class="w3-xlarge w3-card-4 w3-border-dark-grey w3-padding-20">
+						<marquee behavior="scroll" direction="left">
+							<h1>Selamat Datang di Website Kami Pokjar BHSM : www.pokjarbhsm.com</h1>
+						</marquee>
+					</span>
+					<P>
+						<h4>Sahabat Mandiri,Pokjar BHSM ( BMI Hongkong Sadar Masa Depan)adalah salah satu dari 6 POKJAR binaan Bank Mandiri.Markas kami berada di Pendopo belakang kolam renang Victoria Park, bisa di akses dari MTR Tinhau Exit A2 </h4>
+					</P>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="w3-row w3-padding w3-border">
+
+		<!-- Blog entries -->
+		<div class="w3-col l8 s12">
+
+			<!-- Blog entry -->
+			<div class="w3-container w3-white w3-margin w3-padding-large">
+				<div class="w3-center">
+					<h3> Berita Terbaru</h3>
+					<h5> PENUTUPAN KELAS MANDIRI SAHABATKU BATCH XI</h5>
+
+				</div>
+
+				<div class="w3-justify w3-card-4 w3-light-grey w3-padding">
+					<center> <img src="images/ms_wisuda2.jpg" alt="ms_wisuda2" style="width:80%" class="w3-padding-16"></center>
+					<h4> <strong> Penutupan Kelas Mandiri Sahabatku Batch XI </strong></h4>
+					<h5>
+						<p>Fotresshill, 3 November 2019. Bertempat di Grand Harbour Hotel Fotresshill,telah di laksanakan Kelas Mandiri Sahabatku pertemuan ke 3 sekaligus Penutupan Kelas Mandiri Sahabatku Batch XI, yang di hadiri oleh :</p>
+						
+							<li>Perwakilan dari Bank Mandiri Jakarta</li>
+							<li> Bapak Asuh Bengkel Astra Motor</li>
+						<li>Bapak Asuh Peternakan & Pertanian dari MAI ( Mandiri Amal Insani) </li>
+						<br>
+						<p> Pada acara tersebut juga di adakan Wisuda secara simbolis kepada perwakilan ke 7 Pokjar Mandiri Sahabatku. Juga pengumuman pemenang lomba Bisnis Masa Depan.</p>
+						<p>Adapun pemenang nya adalah : </p>
+						<p>~ Juara I :Yeti Krisnawati  </p>
+						<p>~ Juara II :Nanik Yuliani (FB: Mbak Yull) dari Pokjar BHSM</p>
+						<p>~ Juara III : Ratna Suprapti dari Pokjar NETRAL</p>
+						<p>~ Juara Harapan I : Binatun ( FB:Brian Zahi)</p>
+						<p>~ Juara Harapan II : Mujini (FB: Hanamura MoslemGallery) dari Pokjar BHSM</p>
+						
+						<p> Selamat kepada semua pemenang, semoga ilmu yang di dapat dari kelas Mandiri Sahabatku bisa menjadi bekal untuk menjadi pengusaha handal di Indonesia</p>
+								
+					</h5>
+					
+
+					<span class="w3-xlarge w3-border-dark-grey w3-padding-20"><strong>BHSM : BEKERJA , BELAJAR, DAN BERKARYA BERSAMA MANDIRI</strong> </span>
+				</div>
+			</div>
+			<hr>
+			<br>
+			<br>
+			<!-- Blog entry -->
+			<div class="w3-container w3-white w3-margin w3-padding-large">
+				<div class="w3-center ">
+					<h3><strong> BHSM MERAIH JUARA I LOMBA KULINER NUSANTARA</strong></h3>
+
+				</div>
+
+				<div class="w3-justify w3-light-grey w3-padding-large">
+
+				<a href=" kelas_kuliner.html"><img src="images/lomba_kuliner.jpg" alt="lomba_kuliner" style="width:100%" class="w3-padding-16"></a>
+
+					
+					<h5>
+						<p>
+							Causeway Bay 1 September 2019. Bertempat di Ruang Ramayana Gedung KJRI Hongkong , Perwakilan dari Pokjar BHSM mengikuti Lomba Kuliner Nusantara , yang di adakan oleh POSPERA Hongkong.</p>
+
+							<p> Mengambil tema : TRADITIONAL FINGER FOOD, Pokjar BHSM berhasil meraih Juara I, menyisihkan 13 peserta lainnya. Selain rasa bentuk yang unik juga cara penyajian  menjadi nilai lebih yang di tampilkan Pokjar BHSM.</p>
+
+						<p>Selamat untuk Divisi Kuliner BHSM, dan bagi teman-teman yang mau belajar kuliner, mari bergabung di Divisi Kuliner Pokjar BHSM. KAYAOOOO!!!!!</p>
+				
+					</h5>			
+			</div>
+			</div>
+			<br>
+			<br>
+			<!-- Blog entry -->
+			
+			<div class="w3-container  w3-light-grey w3-margin w3-padding-large">
+				<div class="w3-center">
+					<strong><h3>Agenda Kegiatan Pokjar BHSM</h3></strong>
+					<strong><h3> Kelas Kerajinan Rajut </h3></strong>
+				</div>
+
+				<div class="w3-justify  w3-padding ">
+					
+					<iframe width="650" height="315" src="https://www.youtube.com/embed/pQCEqrDQLes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+				</div>
+
+			</div>
+			<!-- END BLOG ENTRIES -->
+		</div>
+
+		<!-- About/Information menu -->
+		<div class="w3-col l4">
+			<!-- About Card -->
+			<div class="w3-white w3-card-4 w3-padding w3-margin">
+				<img src="images/ms_wisuda.jpg" alt="ms_wisuda" style="width:100%" "height: 280" class="w3-padding-16">
+
+
+				<div class="w3-container  w3-padding  w3-light-grey">
+					<a href="kelas_ms.html" > <span class="w3-large"><h4>Kelas Mandiri Sahabatku</h4> </span></a>	
+					<p>Mandiri Sahabatku merupakan program pemberdayaan Buruh Migran Indonesia (BMI) dalam bentuk training entrepreneurship yang diselenggarakan oleh PT Bank Mandiri (Persero) Tbk guna mempersiapkan masa depan BMI yang lebih baik dengan visi programnya adalah menciptakan buruh migran menjadi Majikan di Indonesia </p>
+					<p><span class="w3-xlarge w3-border-dark-grey w3-padding-20"><strong>NANTIKAN !!! KELAS MANDIRI SAHABATKU BACTH XII </strong> </span>
+					</p>
+
+				</div>
+			</div>
+			<hr>
+			
+			<div class="w3-white w3-card-4 w3-padding w3-margin">
+				<img src="images/dosen2.jpg" alt="ms_wisuda" style="width:100%" "height: 280" class="w3-padding-16">
+
+
+				<div class="w3-container  w3-padding  w3-light-grey">
+					<a href="kelas_ms.html" > <span class="w3-large"><h4>Peran Dosen Mandiri Sahabatku </h4> </span></a>	
+					<p>Kesuksesan Program Mandiri Sahabatku tak lepas dari peran para dosen pembimbing dan jg bapak asuh yang tak lelah berbagi ilmu , dan menumbuhkan semangat enterprenuer kepada kami.  </p>
+					<a href="dosen_ms.html">
+						<P>Untuk Lebih Mengenal Beliau.... lanjut baca>>>>> </P>
+					</a>
+
+				</div>
+			</div>
+
+			<!-- Posts -->
+			<div class="w3-white w3-card-4 w3-padding w3-margin">
+				<div class="w3-container w3-padding w3-black">
+					<h4>Kegiatan BHSM</h4>
+				</div>
+
+				<ul class="w3-ul w3-hoverable w3-white">
+
+					<li class="w3-padding-16 w3-card-4 ">
+						<img src="images/tata_busana2.jpg" alt="tata_busana2" class="w3-left w3-margin-right" style="width:40px">
+						<a href="kelas_jahit.html"> <span class="w3-large">Kelas Tata Busana</span></a>
+						<br>
+						<span>Tutor : Wiji Triharyanti</span>
+						
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/komputer_new.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+						<a href="kelas_komputer.html"><span class="w3-large">Kelas Komputer</span></a>
+						<br>
+						<span>Tutor : Nining, Kaspuah
+						</span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/logo_rias3.jpeg" alt="makeup_manten" class="w3-left w3-margin-right w3-original" style="width:10%">
+						<a href="kelas_makeup.html"><span class="w3-large">Kelas MakeUp</span></a>
+						<br>
+						<span>Tutor: Nita </span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/monte_hias.jpg" alt="Image" class="w3-left w3-margin-right " style="width:45px">
+						<a href="kelas_kerajinanmonte.html"><span class="w3-large">Kelas Kerajinan Monte</span> </a>
+						<br>
+						<span>Tutor : Elys Nur Laeli </span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/kuliner_new.jpg" alt="Image" class="w3-left w3-margin-right " style="width:40px">
+						<a href="kelas_kuliner.html"> <span class="w3-large">Kelas Kuliner</span> </a>
+						<br>
+						<span>Tutor : Max, Seruni </span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/bros_acrylic.jpg" alt="Image" class="w3-left w3-margin-right " style="width:40px">
+						<a href="kelas_brosmonte.html"> <span class="w3-large">Kelas Bros Acrylic</span> </a>
+						<br>
+						<span>Tutor : Suli Mandiri</span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/banner_spa.jpg" alt="Image" class="w3-left w3-margin-right " style="width:35px">
+						<a href="kelas_spa.html"> <span class="w3-large">Kelas Beauty & Spa </span> </a>
+						<br>
+						<span>Tutor : Nikita & Lisa </span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/baner_hairstyle.jpeg" alt="Image" class="w3-left w3-margin-right " style="width:35px">
+						<a href="kelas_potongrambut.html"> <span class="w3-large">Kelas Hair Style</span> </a>
+						<br>
+						<span>Tutor : Mujiati </span>
+					</li>
+
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/bhs_inggris.jpg" alt="Image" class="w3-left w3-margin-right " style="width:40px">
+						<a href="kelas_bhs_inggris.html"> <span class="w3-large">Kelas Bahasa Inggris</span> </a>
+						<br>
+						<span>Tutor : Ell </span>
+					</li>
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/rajut_new.jpg" alt="Image" class="w3-left w3-margin-right " style="width:40px">
+						<a href="kelas_bhs_inggris.html"> <span class="w3-large">Kelas  Rajut</span> </a>
+						<br>
+						<span>Tutor : Ismaidah </span>
+					</li>
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/enterprenuer.jpg" alt="enterprenuer" class="w3-left w3-margin-right " style="width:40px">
+						<a href="#"> <span class="w3-large">Kelas  Enterprenuer</span> </a>
+						<br>
+						<span>Tutor : Atik </span>
+					</li>
+					<li class="w3-padding-16 w3-card-4">
+						<img src="images/religi.jpg" alt="religi" class="w3-left w3-margin-right " style="width:40px">
+						<a href="#"> <span class="w3-large">Kelas  Iqr0' & Tajwid </span> </a>
+						<br>
+						<span>Tutor : Sunaeroh </span>
+					</li>
+				</ul>
+			</div>
+			<hr>
+
+			<!-- Advertising -->
+			<div class="w3-white w3-card-4 w3-padding w3-margin">
+				<div class="w3-container w3-padding w3-black">
+					<a href="pokjar_ms.html" class="w3-bar-item w3-button">6 Pokjar Mandiri Sahabatku </a>
+				</div>
+				<div class="w3-container  w3-white">
+					<div class="w3-container w3-display-container w3-light-grey w3-section" style="height:180px">
+						<img src="images/ikon_pokjar.png" width="260" height="180" controls>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<!-- Inspiration -->
+			<div class="w3-white w3-card-4 w3-padding  w3-margin">
+				<div class="w3-container w3-padding w3-black">
+					<a href="jadwal_kegiatan.html" class="w3-bar-item w3-button">
+						<h4>AGENDA KEGIATAN </h4>
+					</a>
+				</div>
+
+				<div class="w3-row-padding w3-white">
+					<div class="w3-col s6 w3-card-4 w3-padding ">
+						<h6>Jadwal Minggu I </h6>
+						<a href="jadwal_minggu1.html">
+							<img src="images/jadwal_minggu1.jpeg" alt="" style="width:100%" height="90">
+						</a>
+
+						<h6>Jadwal Minggu II </h6>
+						<a href="jadwal_minggu2.html">	
+						<img src="images/jadwal_minggu2.jpeg" alt="jadwal_minggu2" style="width:100%" height="90"> 
+						</a>	
+					</div>
+					
+					<div class="w3-col s6 w3-card-4 w3-padding ">
+						
+						<h6>Jadwal Minggu III </h6>
+							
+						<a href="jadwal_minggu3.html">
+						<p><img src="images/jadwal_minggu3.jpeg" alt="jadwal_minggu3" style="width:80%" class="w3-original"></p>
+						</a>
+							
+							
+						<h6>Jadwal Minggu IV </h6>	
+						<a href="jadwal_minggu4.html">
+						<p><img src="images/jadwal_minggu4.jpeg" alt="jadwal_minggu4" style="width:80%"></p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="w3-row w3-padding w3-border">
+		<div class="w3-row-padding w3-padding-16 w3-center">
+			<div class="w3-container w3-padding w3-white">
+				<h4>RUANG KREASI BHSM </h4>
+			</div>
+			<br>
+			<div class="w3-quarter w3-card-4 w3-padding">
+				<img src="images/lomba2.jpg" alt="lomba2" style="width:82%" height="300">
+				<a href="kelas_jahit.html"> <span class="w3-large">
+						<h3>Karya Kelas Menjahit</h3>
+					</span></a>
+				<p>Batik Elegant </p>
+			</div>
+
+			<div class="w3-quarter w3-card-4 w3-padding">
+				<img src="images/bros.png" alt="bros" style="width:85%" height="300">
+				<a href="kelas_brosmonte.html"> <span class="w3-large">
+						<h3>Kelas Bross Acrylic</h3>
+					</span></a>
+				<p> Kreasi Bros Acrylic </p>
+			</div>
+
+			<div class="w3-quarter w3-card-4 w3-padding">
+				<img src="images/makeup1.jpg" alt="makeup1" style="width:95%" height="300">
+				<a href="kelas_makeup.html"> <span class="w3-large">
+						<h3>Karya Kelas Make-up</h3>
+					</span></a>
+				<p>Kreasi Rias Pengantin </p>
+			</div>
+
+			<div class="w3-quarter w3-card-4 w3-padding">
+				<img src="images/potongrambut2.jpg" alt="potongrambut2" style="width:95%" height="300">
+				<a href="kelas_potongrambut.html"> <span class="w3-large">
+						<h3> Kelas Potong Rambut</h3>
+					</span></a>
+				<p>Kreasi Kelas Potong Rambut</p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<!-- Contact Container -->
+	<div class="w3-container w3-card-4  w3-padding-64 w3-theme-l5" id="contact">
+		<div class="w3-row ">
+			<div class="w3-col m5">
+				<div class="w3-padding-12"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+				<h3>Markas BHSM :</h3>
+				<p>Pendopo Area Belakang Kolam Renang Victoria Park</p>
+				<p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>Causeway Bay ,Hong Kong</p>
+				<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +852 91319945 : Aji</p>
+				<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +852 90250574: Atik</p>
+				<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +852 95162903 : Nur Hayati</p>
+				<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +852 93459756 : Kaspuah</p>
+				<p><i class="fa fa-envelope-o w3-hover-opacity w3 text-teal w3-large"></i> bhsm.hongkong14@gmail.com</p>
+			</div>
+
+			<div class="w3-col m7">
+				<form class="w3-container w3-card-4 w3-padding-12 w3-white" action="/action_page.php" target="_blank">
+					<div class="w3-section">
+						<label>Name</label>
+						<input class="w3-input" type="text" name="Name" required>
+					</div>
+					<div class="w3-section">
+						<label>Email</label>
+						<input class="w3-input" type="text" name="Email" required>
+					</div>
+
+					<div class="w3-section">
+						<label>Message</label>
+						<input class="w3-input" type="text" name="Message" required>
+					</div>
+					<input class="w3-check" type="checkbox" checked name="Like">
+					<label>I Like it!</label>
+					<button type="submit" class="w3-button w3-right w3-theme">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="w3-container w3-xlarge w3-padding-32 w3-grey">
+		<center>
+			<h3> Di Dukung Oleh</h3>
+		</center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="images/BUMN.png" class="w3-border" alt="BUMN" style="padding:5px;width:30%"> &nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="images/logo_bm.png" class="w3-border" alt="logo_bm" style="padding:4px;width:30%">&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="images/logo_ms2.jpg" class="w3-border" alt="logo_ms2" style="padding:4px;width:30%">
+
+	</div>
+
+	<!--Footer-->
+	<footer class="w3-container w3-padding-58 w3-center w3-opacity w3-black">
+		<div class="w3-xlarge w3-padding-32 w3-black ">
+			<h3> Follow Us On :</h3>
+			<a href="https://www.facebook.com/groups/pokjarbhsm/ "><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+			<a href="kontak_kami.html"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+			<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank "><i class="fa fa-envelope w3-hover-opacity"></i></a>
+
+
+		</div>
+		<div class="w3-xlarge  w3-padding-22 w3-black">
+			<center>
+				<p>copyright @Pokjar_BHSM.2018</p>
+			</center>
+		</div>
+
+	</footer>
+
+	<script>
+		// Script for side navigation
+		var myIndex = 0;
+		carousel();
+
+		function w3_open() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += "w3-show"
+			} else {
+				x.className = x.className.replace("w3-show", "");
+			}
+
+			x.style.width = "300px";
+			x.style.paddingTop = "10%";
+			x.style.display = "block";
+		}
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 2000); // Change image every 6 seconds
+		}
+
+		// Close side navigation
+		function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+		}
+
+		// Used to toggle the menu on smaller screens when clicking on the menu button
+		function openNav() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
