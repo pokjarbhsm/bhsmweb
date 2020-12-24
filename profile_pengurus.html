@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html>
+<title> Pokjar BHSM </title>
+<html lang="en-US">	
+<meta charset="UTF-8">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">		
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+		body {font-family: "Open Sans"}
+		.mySlides {display:none}
+		.w3-tag, .fa {cursor:pointer}
+		.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}		
+		.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+		.fa-anchor,.fa-coffee {font-size:200px}	
+	</style>
+	
+	
+	<body id="myPage">
+
+	<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-bar-item w3-button">BERANDA</a>
+  <a href="tentang_kami.html" class="w3-bar-item w3-button">TENTANG BHSM</a>
+  <a href="kontak_kami.html" class="w3-bar-item w3-button">KONTAK BHSM</a>
+	
+	
+	
+  <a href="" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+	
+	<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Beranda</a>
+  <a href="tentang_kami.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tentang BHSM</a> 
+  <a href="kontak_kami.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontak BHSM</a>
+	 
+	<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PROFILE <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 
+		<a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a>
+      <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus </a>
+      
+    </div>
+  </div>
+	 
+	  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PROFILE ALUMNI <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 
+		
+		<a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a>
+		<a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a>
+		<a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a>
+		<a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a>
+		<a href="damar.html" class="w3-bar-item w3-button">Markhamah </a>
+		<a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a>
+		<a href="martun.html" class="w3-bar-item w3-button">Martun </a>
+		
+		 </div>
+	 </div>
+			
+	 
+	<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Mandiri Sahabatku<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+		<a href="kelas_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas MS</a>
+		<a href="pokjar_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pokjar MS</a>
+		<a href="korwil_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Korwil MS</a>
+		<a href="coding_mum.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coding Mum</a>
+		</div>
+	 </div>
+	 
+	 <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Kegiatan <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+	 	<a href="kelas_komputer.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Komputer</a>
+		<a href="kelas_jahit.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Menjahit</a>
+		<a href="kelas_makeup.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Make Up</a>
+		<a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kerajinan Monte</a>
+		<a href="kelas_rajut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Rajut</a>
+		<a href="kelas_kuliner.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kuliner / Latbar </a>
+		<a href="kelas_bungasabun.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bunga Sabun</a>
+		<a href="kelas_bahasa_inggris.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bahasa Inggris</a>
+		<a href="kelas_potongrambut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Potong Rambut</a>
+		<a href="kelas_spa.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Beauty & Spa </a>
+	 </div>
+	 </div>
+	 
+	 <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Lain - Lain <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+  		<a href="andriwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">WorkShop Menjahit Andrie Wo</a>
+		<a href="outbond.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Outbond</a>
+		<a href="cross_pokjar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cross Pokjar</a>
+		<a href="anniversary_laci.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Anniversary Laci</a>
+		<a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Penutupan MS Bacth 9 </a>
+	</div>
+	</div>
+ </div>
+	</div>
+	
+	 <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+	  
+    <a href="tentang_kami.html" class="w3-bar-item w3-button">Tentang BHSM</a>
+    <a href="kontak_kami.html" class="w3-bar-item w3-button">Kontak BHSM</a>
+	  
+	  
+    <a href="#" class="w3-bar-item w3-button">PROFILE</a>
+	 <ul>
+		 <li> <a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a></li>
+		 <li> <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus</a></li>		 		 
+	  </ul>
+	  
+	   <a href="#" class="w3-bar-item w3-button">PROFILE ALUMNI</a> 
+	  <ul>
+		  <li><a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a></li>
+		  <li><a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a></li>
+		  <li><a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a></li>
+		  <li><a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a></li>
+		  <li><a href="damar.html" class="w3-bar-item w3-button">Markhamah </a></li>
+		  <li><a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a></li>
+		  <li><a href="martun.html" class="w3-bar-item w3-button">Martun </a></li>
+	  </ul>
+	  
+    <a href="#" class="w3-bar-item w3-button">Mandiri Sahabatku</a>
+	  <ul>
+	  	<li> <a href="kelas_ms.html" class="w3-bar-item w3-button">Kelas MS</a></li>
+		 <li> <a href="pokjar_ms.html" class="w3-bar-item w3-button">Pokjar MS</a></li>
+		 <li> <a href="korwil_ms.html" class="w3-bar-item w3-button">Korwil MS</a></li>		
+	  	<li> <a href="coding_mum.html" class="w3-bar-item w3-button">Coding Mum </a></li>	
+	  </ul>
+	  
+	  <a href="#" class="w3-bar-item w3-button">Kegiatan</a> 
+	  <ul>
+		  <li><a href="kelas_komputer.html" class="w3-bar-item w3-button ">Kelas Komputer</a></li>
+		  <li><a href="kelas_jahit.html" class="w3-bar-item w3-button ">Kelas Menjahit</a></li>
+		  <li><a href="kelas_makeup.html" class="w3-bar-item w3-button ">Kelas Make Up</a></li>
+		  <li><a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button ">Kelas Kerajinan Monte</a></li>
+		  <li><a href="kelas_rajut.html" class="w3-bar-item w3-button ">Kelas Rajut</a></li>
+		  <li><a href="kelas_kuliner.html" class="w3-bar-item w3-button ">Kelas Kuliner / Latbar </a></li>
+		  <li><a href="kelas_bungasabun.html" class="w3-bar-item w3-button ">Kelas Bunga Sabun</a></li>
+		  <li><a href="kelas_bahasa_inggris.html" class="w3-bar-item w3-button ">Kelas Bahasa Inggris</a></li>
+		  <li><a href="kelas_potongrambut.html" class="w3-bar-item w3-button ">Kelas Potong Rambut</a></li>
+           <li><a href="kelas_spa.html" class="w3-bar-item w3-button ">Kelas Beauty & Spa </a></li>
+	  </ul>
+	  
+	   <a href="#" class="w3-bar-item w3-button">Lain - Lain </a> 
+	  <ul>
+		  <li><a href="andriwo.html" class="w3-bar-item w3-button ">WorkShop Menjahit Andrie Wo</a></li>
+		  <li><a href="outbond.html" class="w3-bar-item w3-button ">Outbond</a></li>
+		  <li><a href="cross_pokjar.html" class="w3-bar-item w3-button ">Cross Pokjar</a></li>
+		  <li><a href="anniversary_laci.html" class="w3-bar-item w3-button ">Anniversary Laci</a></li>
+		  <li><a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button">Penutupan MS Bacth 9 </a></li>
+	  </ul>
+  </div>
+<!-- Header -->
+        <br>
+<header class="w3-container w3-card-4  w3-white w3-center" style="padding:30px 16px">
+    <img src="images/new_logo.jpeg" width=100% height="500">
+	
+</header>
+		
+<!--midle -->
+		
+        <div class="w3-container">
+       <div  class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top  w3-block"> 
+            <center>  <h2> <strong>SUSUNAN KEPENGURUSAN BHSM PERIODE TAHUN 2020</strong></h2></center>
+            </div>
+        </div>
+        
+     <br>   
+	<div class="w3-container w3-grey w3-padding ">
+        <center><h3> <p>Pembina BHSM </p> </h3> 
+ <img src="images/pak-dhani.jpg" alt="pak-dhani" style="width:30%" class="w3-circle w3-hover-opacity">
+  <h3>Bpk Danie Irawan</h3>
+     </center>
+</div>
+		<BR>
+		<br>
+	<div class="w3-row-padding w3-light-grey w3-card-4" id="about">
+		
+		<div class="w3-col l2 m6 w3-light-grey w3-container  w3-padding-16">
+			
+			<img src="images/aji.jpeg" width="150" height="180">
+			<center><h4> Ketua BHSM :</h4></center>
+			<center><h5>Dariyah Aji N </h5></center>
+		</div>
+
+		<div class="w3-col l2 m6 w3-light-grey w3-container w3-padding-16">
+			
+			<img src="images/atik1.jpg" width="150" height="180">
+			<center><h4>Wakil Ketua :</h4></center>
+			<center><h5> Muryati </h5></center>
+		</div>
+
+		<div class="w3-col l2 m6 w3-light-grey w3-container w3-padding-16">
+			
+			<img src="images/prabu1.jpg" width="150" height="180">
+			<center><h4>Sekretaris I :</h4></center>
+			<center><h5> Siti Nur Hayati </h5></center>
+		</div>
+		
+		<div class="w3-col l2 m6 w3-light-grey w3-container w3-padding-16">
+			
+			<img src="images/kaspuah.jpeg" width="150" height="180">
+			<center><h4>Sekrataris II :</h4></center>
+			<center><h5> Kaspuah</h5></center>
+		</div>
+
+		<div class="w3-col l2 m6 w3-light-grey w3-container w3-padding-16">
+			
+			<img src="images/sunairoh1.png" width="150" height="180">
+			<center><h4>Bendahara :</h4></center>
+			<center><h5> Siti Sunaeroh </h5></center>
+		</div>
+
+		<div class="w3-col l2 m6 w3-light-grey w3-container w3-padding-16">
+			
+			<img src="images/mujini.jpg" width="150" height="180">
+			<center><h4>Divisi Website </h4> </center>
+			<center><h5> Mujini </h5></center>
+		</div>
+	</div>
+
+	<br>
+	<br>
+		
+	<div class="w3-row-padding  w3-card-4 w3-padding w3-background-light-grey" id="about">
+		<div class="w3-center w3-background-grey w3-padding-30">
+			<span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">DIVISI - DIVISI </span>
+		</div>
+		<br>
+		<br>
+		<div class="w3-col l2 m6 w3-white w3-container w3-padding-16">
+			<h4>Istirodhah </h4>
+			<img src="images/istirodhah.jpg" width="150" height="180">
+			<h4>Divisi Kegamaan</h4>
+		</div>
+
+
+		<div class="w3-col l2 m6 w3-white w3-container w3-padding-16">
+			<h4>Puji Hartatik </h4>
+			<img src="images/maxjudy.png" width="150" height="180">
+			<h4>Koordinataor Kuliner</h4>
+		</div>
+
+		<div class="w3-col l2 m6 w3-white w3-container w3-padding-16">
+			<h4> Muryati</h4>
+			<img src="images/atik1.jpg" width="150" height="180">
+			<h4>Divisi Pelatihan</h4>
+		</div>
+		
+		<div class="w3-col l2 m6 w3-white w3-container w3-padding-16">
+			<h4> Nanik Yuliani</h4>
+			<img src="images/ .jpg" width="150" height="180">
+			<h4>Divisi Pelatihan II</h4>
+		</div>
+
+		<div class="w3-col l2 m6 w3-white w3-container w3-padding-16">
+			<h4>Nurul Hidayah</h4>
+			<img src="images/nur_hidayah.jpg" width="150" height="180">
+			<h4>Divisi Lapangan</h4>
+		</div>
+
+		<div class="w3-col l2 m6 w3-white w3-container w3-padding-16">
+			<h4>Nicky Putri Karini</h4>
+			<img src="images/nicky.jpg" width="150" height="180">
+			<h4>Marketing</h4>
+		</div>
+	</div>
+
+	<br>
+		
+	<div class="w3-row-padding w3-card-4 w3-background-light-grey " id="about">	
+     <div class="w3-quarter w3-padding">
+		 
+		</div>
+		
+		<div class="w3-quarter   w3-padding w3-center w3-margin-bottom">
+			<h3>
+				<center>Seruni</center>
+			</h3>
+			<img src="images/seruni2.jpg" alt="nining" style="width:100%" height="280">
+			<h4>Divisi Kuliner</h4>
+		</div>
+
+		<div class="w3-quarter   w3-padding w3-center w3-margin-bottom">
+			<h3>
+				<center>Nela Riwayati</center>
+			</h3>
+			<img src="images/nela.jpeg" alt="nela" style="width:100%" height="280">
+			<h4> Divisi Kuliner</h4>
+		</div>
+		
+		<div class="w3-quarter   w3-padding w3-center w3-margin-bottom">
+			
+		</div>
+		
+	</div>	
+		
+        
+	<!-- First Grid -->
+		 <h2><p><strong> <button class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top w3-block">PROFILE PENGURUS BHSM TAHUN 2019</button> </strong> </p></h2>	
+			
+        <br>
+    <div class="w3-row-padding w3-white w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/aji.jpeg" alt="aji" style="width:100%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Ketua ;Dariyah Aji Nur S </button>
+          </div>
+        </div>
+		<br>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/suli1.png" alt="suli1" style="width:85%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Wakil Ketua ; Suliyem</button>
+          </div>
+        </div>  
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/prabu2.jpeg" alt="prabu2" style="width:100%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Sekretaris I; Siti Nur Hayati</button>
+          </div>
+        </div>  
+        </div>
+        
+         <br>
+    <div class="w3-row-padding w3-light-grey w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/kaspuah.jpeg" alt="kaspuah" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Sekretaris II; Kaspuah </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/sunairoh1.png" alt="sunaeroh" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara; Sunaeroh</button>
+          </div>
+        </div>  
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/mujini.jpg" alt="mujini" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Website; Mujini  </button>
+          </div>
+        </div>  
+        </div> 
+        
+        
+         <br>
+    <div class="w3-row-padding w3-light-grey w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/vani1.jpg" alt="vani1" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Website; Evi Vieanny</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/askuku.png" alt="askuku" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Dokumentasi; Widarsih</button>
+          </div>
+        </div>  
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/atik1.jpg" alt="atik1" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Pelatihan; Muryati </button>
+          </div>
+        </div>  
+        </div> 
+        
+         <br>
+    <div class="w3-row-padding w3-light-grey w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/maxjudy.png" alt="maxjudy" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Koordinator Kuliner; Puji Hartatik</button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/nela.jpeg" alt="nela" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Kuliner; Nela Riwayati</button>
+          </div>
+        </div>  
+        
+         <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/nining.jpeg" alt="nining" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing; Nining Kartika</button>
+          </div>
+        </div>  
+        </div>
+        
+            <br>
+    <div class="w3-row-padding w3-light-grey w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/nicky.jpg" alt="nicky" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Lapangan; Nicky Putri Karini</button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-margin-bottom">
+			<center><a href="#"> <img src="images/maryati.jpg" alt="maryati" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Lapangan; Maryati</button>
+          </div>
+        </div>  
+        
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/istirodhah.jpg" alt="istirodhah" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Divisi Agama : Istirodhah </button>
+          </div>
+        </div>  
+        </div>
+        
+        
+  <!-- second grid-->      
+    <h2><p><strong> <button class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top w3-block">PROFILE PENGURUS BHSM TAHUN 2018</button> </strong> </p></h2>
+	
+	<!-- First Grid -->
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/lulu.jpg" alt="lulu" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Ketua ; Lulu </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/hanifah.png" alt="hanifah" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Wakil Ketua ; Hanifah</button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/erika.png" alt="erika" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris ; Erika </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/miasih.png" alt="miasih" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris ; Miasih </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/atik1.jpg" alt="atik" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara ; Atik</button>
+          </div>
+        </div>
+            
+            <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/sunairoh1.png" alt="sunairoh" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara ; Sunairoh</button>
+          </div>
+        </div>
+      </div>
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/suyanti.jpg" alt="suyanti" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan ; Yanti</button>
+          </div>
+        </div>
+            
+         <div class="w3-third w3-margin-bottom">
+            <center><a href="#"><img src="images/rismi.png" alt="rismi" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kegiatan ; Rismi</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/angelica1.png" alt="angelica" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kegiatan ; Erna </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/jimmy.jpg" alt="jimmy" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing ; Jimmy </button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/prapti_marketing.png" alt="prapti" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing ; Prapti</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/yanti1.png" alt="yanti" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kuliner ; Yanti </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/nanik1.png" alt="ana" style="width:90%" class="w3-hover-opacity"></a></center>
+            
+          <div class="w3-container w3-white">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kuliner ; Nanik  </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/max_koordinir.latbar.png" alt="max" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Koordinator Tut. ; Kak Max</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/askuku.png" alt="askuku" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Dokumentasi ; As kuku </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/mujini.jpg" alt="mujini" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Website ; Mujini </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/yona2.png" alt="yona" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Komputer ; Yona</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/prabu1.jpg" alt="prabu" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Komputer ; Prabu </button>
+          </div>
+        </div>
+     <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/yunis2.png" alt="yunis" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Komputer ; Yuniesh </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/hanifah.png" alt="hanifah" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Jahit ; Hanifah</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/anajfs.png" alt="ana" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Jahit ; Ana Jfs </button>
+          </div>
+        </div>
+      </div>
+		
+		
+	  </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/nikita.png" alt="emon" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up ; Nikita </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/emon2.png" alt="emon" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up ; Emon</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/waki_div.pelatihan.png" alt="waki" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up ; Waki  </button>
+          </div>
+        </div>
+      </div>
+	
+	
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+            <center><a href="#"> <img src="images/jujuk1.png" alt="jujuk" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Recycle ; Jujuk  </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/ina_arini.png" alt="ina" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Chusion ; Ina A.</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/suni.png" alt="suni" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Kerajinan Monte ; Suni </button>
+          </div>
+        </div>
+      </div>
+	<br>
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+            <center><a href="#"> <img src="images/elisa.jpg" alt="elisa" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan ; Elisa Firdaus </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/mujiati.jpg" alt="mujiati" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Bunga Sabun : Mujiati</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/laeli.tutor_monte.png" alt="laeli.tutor_monte" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Kerajinan Monte ; Laeli </button>
+          </div>
+		</div>
+		
+	</div>
+	
+	
+<br>
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+            <center><a href="#"> <img src="images/logo_bhsm.jpg" alt="elisa" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"></button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/nitarias.jpg" alt="mujiati" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up: Nita </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/logo_kayau.png" alt="laeli.tutor_monte" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> </button>
+          </div>
+		</div>	
+	</div>
+        
+        <!-- thirth grid-->
+	   <h2><p><strong> <button class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top w3-block">PROFILE PENGURUS BHSM TAHUN 2017</button> </strong> </p></h2>
+	
+	<!-- First Grid -->
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/lulu.jpg" alt="lulu" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Ketua ; Lulu </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/suli1.png" alt="suli" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Wakil Ketua ; Suli</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/prabu1.jpg" alt="prabu" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris ; Prabu </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/yunis2.png" alt="yunis1" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris ; Yuniesh</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/anapangestu.png" alt="ana.p" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara ; Anna</button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/atik1.jpg" alt="atik1" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara ; Atik</button>
+          </div>
+        </div>
+      </div>
+	
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/waki1.png" alt="artika" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan ; Waki</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+            <center><a href="#"><img src="images/sumartini.png" alt="sumartini" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan ; Emon</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/jimmy.jpg" alt="jimmy" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing ; Jimmy </button>
+          </div>
+        </div>
+      </div>
+	
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/erika.png" alt="erika" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing ; Erika </button>
+          </div>
+        </div>
+         
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/nikita.png" alt="nikita" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kegiatan ; Nikita</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/hanifah.png" alt="hanifah" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kegiatan ; Hanifah </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/anajfs.png" alt="ana" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kegiatan ; Ana  </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/max_koordinir.latbar.png" alt="max" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kuliner ; Kak Max</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/gimah.png" alt="gimah" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kuliner ; Bu Arum </button>
+          </div>
+        </div>
+      </div>
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/mendez.png" alt="mendez" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Dokumentasi ; Mendez </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/askuku.png" alt="askuku" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Dokumentasi ; Widarsih </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/sunairoh1.png" alt="sunairoh" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Keagamaan ; Sunairoh </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/yona2.png" alt="yona2" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Komputer ; Yona </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/hanifah.png" alt="juspusa" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Jahit ; Hanifah</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/anajfs.png" alt="ana" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Jahit ; Ana Jfs </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <center><a href="#"> <img src="images/nikita.png" alt="emon" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up ; Nikita </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/emon2.png" alt="emon2" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up ; Emon</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/suli1.png" alt="suli" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Bros Monte ; Suli </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+            <center><a href="#"> <img src="images/jujuk1.png" alt="jujuk" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Recycle ; Jujuk  </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <center><a href="#"><img src="images/ina_arini.png" alt="ina" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Chusion ; Ina A.</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/alindar.png" alt="alindar" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Pendamping Kopasus </button>
+          </div>
+        </div>
+      </div>    
+      
+        
+   <strong><p><button class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top  w3-block"> PROFILE PENGURUS BHSM TAHUN 2016</button></p> </strong>
+	
+	
+	
+	<!-- First Grid -->
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-card-4 w3-padding w3-margin-bottom">
+        <br><br> <center><a href="#"> <img src="images/hayati1.png" alt="hayati" style="width:70%" class="w3-hover-opacity"></a></center>
+			
+          <div class="w3-container w3-white">
+            
+           &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Ketua ; Hayati </button><br><br>
+			 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/hayati.riyanto"><i class="fa fa-facebook-official w3-hover-opacity"></i> Hayati Riyanto </a> 
+          </div>
+        </div>
+		
+        <div class="w3-third w3-card-4 w3-padding  w3-margin-bottom">
+			<center><a href="#"><img src="images/yona2.png" alt="yona" style="width:80%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris ; Yona </button><br>
+			  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i> Della Wong Kendal </a>  
+          </div>
+        </div>
+		
+		<div class="w3-third w3-card-4 w3-padding w3-margin-bottom">
+			<center><a href="#"><img src="images/susi1.png" alt="susi" style="width:80%" class="w3-hover-opacity"></a> </center>
+			
+          <div class="w3-container w3-white">
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara ; Susi </button><br>
+			 &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i> Susila Wati </a>   
+			  
+          </div>
+        </div>
+      </div>
+	
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/anapangestu.png" alt="anna.p" style="width:90%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara ; Anna </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/heny.png" alt="heny" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan ; Heny </button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/lulu.jpg" alt="lulu" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan ; Lulu</button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/jimmy.jpg" alt="jimmy" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing ; Jimmy </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/suni.png" alt="suni" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Marketing ; Suni</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/eka.h1.png" alt="eka" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+			 <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. kegiatan ; Eka</button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/mendez.png" alt="mendez" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kegiatan ; Mendez</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/prabu1.jpg" alt="prabu" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kuliner & Jelly Art ; Prabu</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/zhe.png" alt="zhe" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kuliner ; Zhe</button>
+          </div>
+        </div>
+      </div>
+	
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/suli1.png" alt="suli" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Kerajinan ; Suli</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/jujuk1.png" alt="jujuk1" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Keagamaan ; Jujuk</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/hanifah.png" alt="hanifah" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Menjahit ; Hanifa</button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/yona2.png" alt="yona" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Komputer ; Yona </button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/anapangestu.png" alt="ana" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Rajut ; Anna</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/nikita.png" alt="tya" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Make Up ; Nikita </button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/sinta2.jpeg" alt="sinta2" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'">Tutor Make Up ; Shinta  </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/suli1.png" alt="suli" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Bros Monte ; Suli</button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/jujuk1.png" alt="xena" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Tutor Recycle ; Jujuk </button>
+          </div>
+        </div>
+      </div>
+	         
+              
+      <!--five grid-->  
+	<h3><strong><p><button class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top  w3-block"> PROFILE PENGURUS BHSM TAHUN 2015</button></p> </strong></h3>
+	
+
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="https://www.facebook.com/hayati.riyanto?ref=br_rs"> <img src="images/hayati.png" alt="hayati" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Ketua </button>
+          </div>
+        </div>
+		
+        <div class="w3-third w3-margin-bottom">
+          <a href="www.facebook.com/putri.amellya.5"><img src="images/yona.png" alt="yona" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris 1</button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/EnyShenadhA"><img src="images/rahma.png" alt="rahma" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Sekertaris 2 </button>
+          </div>
+        </div>
+      </div>
+	
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="https://www.facebook.com/susila.wati1984"> <img src="images/susi.png" alt="susi" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara 1 </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/roro.mendhut.73?fref=mentions"><img src="images/eka.h.png" alt="eka" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Bendahara 2</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/vienita.munaf"><img src="images/ernawati.png" alt="ernawati" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan </button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="https://www.facebook.com/artika.ailinna"> <img src="images/artika.png" alt="artika" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pelatihan </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/nikita.phainten"><img src="images/anik.s.png" alt="anik" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pemasaran</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/phaijem.zhemox"><img src="images/shinta.png" alt="shinta" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Pemasaran </button>
+          </div>
+        </div>
+      </div>
+	
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="https://www.facebook.com/nia.jfs"> <img src="images/kurnia.png" alt="kurnia" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Div. Umum </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/eenn.blenkk"><img src="images/een.png" alt="een" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Monte</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/zahwa.azizah.3"><img src="images/zahwa.png" alt="zahwa" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Kuliner </button>
+          </div>
+        </div>
+      </div>
+	
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/zaenna.zain.png" alt="zaena" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Kuliner </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/sukmo.reyartika"><img src="images/sukmo.png" alt="sukmo" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Kuliner</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="https://www.facebook.com/yulia.n.galek"><img src="images/jujuk.png" alt="jujuk" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Recycle </button>
+          </div>
+        </div>
+      </div>
+	
+	 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="https://www.facebook.com/profile.php?id=100006866117967"> <img src="images/ida.png" alt="ida" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Craving </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/fitri..png" alt="fitri" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Make Up</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/djtya.png" alt="tya" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Make Up </button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/nia.png" alt="yona2" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Jahit </button>
+          </div>
+        </div>
+		
+		 <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/juspusa.jpg" alt="juspusa" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Kantonis</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/xenaiis.png" alt="xena" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Taekwondo </button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/ddnova.png" alt="ddnova" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Taekwondo </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/sri_wardani.png" alt="sri_w" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+			  
+	 <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Jelly Art</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/tutor_bunga.stoking.png" alt="tutor" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Mentor Bunga Stocking </button>
+          </div>
+        </div>
+      </div>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+         <a href="#"> <img src="images/mbak_derry.png" alt="mbak_derry" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Pendamping Kopasus </button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/mbak_anggrek.png" alt="mbak_angrek" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> pendamping Kopasus</button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-margin-bottom">
+          <a href="#"><img src="images/alindar.png" alt="alindar" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Pendamping Kopasus </button>
+          </div>
+        </div>
+      </div>
+	
+	              
+      <!-- last grid-->          
+	<div class="w3-container w3-black w3-center w3-opacity w3-padding-30">
+    <i class="fa fa-home w3-hover-opacity"> Markas Pokjar BHSM</i>
+    <h6 class="w3-margin ">MTR Tin Hau Exit A2</h6>
+    <h6 class="w3-margin ">Area Belakang Kolam Renang Victoria Park</h6>
+    <h6 class="w3-margin "> Causeway Bay</h6>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-30 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.facebook.com/search/top/?q=bhsm%20(bmi%20hongkong%20sadar%20masa%20depan)"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="kontak_kami.html"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+    <a href="https://myaccount.google.com/u/1/?pageId=none"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    
+ </div>
+ <p>copyrigth @Pokjar_BHSM.2018</p>
+</footer>
+
+<script>
+// Script for side navigation
+	var myIndex = 0;
+		carousel();
+		
+function w3_open() {
+    var x = document.getElementById("navDemo");
+	if ( x.className.indexOf ("w3-show" )== -1){
+		x.className += "w3-show"
+	}
+	else { x.className = x.className.replace("w3-show", "");
+		 }
+	
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+		
+		function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 6 seconds
+}
+	
+		// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+	  
+	 
+	
