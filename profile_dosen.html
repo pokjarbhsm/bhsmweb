@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<title> Pokjar BHSM </title>
+<html lang="en-US">	
+<meta charset="UTF-8">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">		
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+		body {font-family: "Open Sans"}
+		.mySlides {display:none}
+		.w3-tag, .fa {cursor:pointer}
+		.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}		
+		.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+		.fa-anchor,.fa-coffee {font-size:200px}	
+	</style>
+	
+	
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-bar-item w3-button">BERANDA</a>
+  <a href="tentang_kami.html" class="w3-bar-item w3-button">TENTANG BHSM</a>
+  <a href="kontak_kami.html" class="w3-bar-item w3-button">KONTAK BHSM</a>
+	
+	
+	
+  <a href="" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+	
+	
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Beranda</a>
+  <a href="tentang_kami.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tentang BHSM</a> 
+  <a href="kontak_kami.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontak BHSM</a>
+	 
+	<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PROFILE <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 
+		<a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a>
+      <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus </a>
+    </div>
+  </div>
+	 
+	  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PROFILE ALUMNI <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 
+		
+		<a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a>
+		<a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a>
+		<a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a>
+		<a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a>
+		<a href="damar.html" class="w3-bar-item w3-button">Markhamah </a>
+		<a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a>
+		<a href="martun.html" class="w3-bar-item w3-button">Martun </a>
+		
+		 </div>
+	 </div>
+	 
+	 
+	<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Mandiri Sahabatku<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+		<a href="kelas_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas MS</a>
+		<a href="pokjar_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pokjar MS</a>
+		<a href="korwil_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Korwil MS</a>
+		<a href="coding_mum.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coding Mum</a>
+		</div>
+	 </div>
+	 
+	 <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Kegiatan <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+	 	<a href="kelas_komputer.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Komputer</a>
+		<a href="kelas_jahit.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Menjahit</a>
+		<a href="kelas_makeup.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Make Up</a>
+		<a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kerajinan Monte</a>
+		<a href="kelas_rajut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Rajut</a>
+		<a href="kelas_kuliner.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kuliner / Latbar </a>
+		<a href="kelas_bungasabun.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bunga Sabun</a>
+		<a href="kelas_bahasa_inggris.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bahasa Inggris</a>
+		<a href="kelas_potongrambut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Potong Rambut</a>
+		<a href="kelas_spa.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Beauty & Spa</a>
+	 </div>
+	 </div>
+	 
+	<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Lain - Lain <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+  		<a href="andriwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">WorkShop Menjahit Andrie Wo</a>
+		<a href="outbond.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Outbond</a>
+		<a href="cross_pokjar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cross Pokjar</a>
+		<a href="anniversary_laci.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Anniversary Laci</a>
+		<a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Penutupan MS Bacth 9 </a>
+	</div>
+	</div>
+ </div>
+	</div>
+	
+	 <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+	  
+    <a href="tentang_kami.html" class="w3-bar-item w3-button">Tentang BHSM</a>
+    <a href="kontak_kami.html" class="w3-bar-item w3-button">Kontak BHSM</a>
+	  
+	  
+    <a href="#" class="w3-bar-item w3-button">PROFILE</a>
+	 <ul>
+		 <li> <a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a></li>
+		 <li> <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus</a></li>	 		 
+	  </ul>
+	  
+	   
+	 <a href="#" class="w3-bar-item w3-button">PROFILE ALUMNI</a> 
+	  <ul>
+		  <li><a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a></li>
+		  <li><a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a></li>
+		  <li><a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a></li>
+		  <li><a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a></li>
+		  <li><a href="damar.html" class="w3-bar-item w3-button">Markhamah </a></li>
+		  <li><a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a></li>
+		  <li><a href="martun.html" class="w3-bar-item w3-button">Martun </a></li>
+	  </ul>
+	  
+	  
+    <a href="#" class="w3-bar-item w3-button">Mandiri Sahabatku</a>
+	  <ul>
+	  	<li> <a href="kelas_ms.html" class="w3-bar-item w3-button">Kelas MS</a></li>
+		 <li> <a href="pokjar_ms.html" class="w3-bar-item w3-button">Pokjar MS</a></li>
+		 <li> <a href="korwil_ms.html" class="w3-bar-item w3-button">Korwil MS</a></li>		
+	  	<li> <a href="coding_mum.html" class="w3-bar-item w3-button">Coding Mum </a></li>	
+	  </ul>
+	  
+	  <a href="#" class="w3-bar-item w3-button">Kegiatan</a> 
+	  <ul>
+		  <li><a href="kelas_komputer.html" class="w3-bar-item w3-button ">Kelas Komputer</a></li>
+		  <li><a href="kelas_jahit.html" class="w3-bar-item w3-button ">Kelas Menjahit</a></li>
+		  <li><a href="kelas_makeup.html" class="w3-bar-item w3-button ">Kelas Make Up</a></li>
+		  <li><a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button ">Kelas Kerajinan Monte</a></li>
+		  <li><a href="kelas_rajut.html" class="w3-bar-item w3-button ">Kelas Rajut</a></li>
+		  <li><a href="kelas_kuliner.html" class="w3-bar-item w3-button ">Kelas Kuliner / Latbar </a></li>
+		  <li><a href="kelas_bungasabun.html" class="w3-bar-item w3-button ">Kelas Bunga Sabun</a></li>
+		  <li><a href="kelas_bahasa_inggris.html" class="w3-bar-item w3-button ">Kelas Bahasa Inggris</a></li>
+		  <li><a href="kelas_potongrambut.html" class="w3-bar-item w3-button ">Kelas Potong Rambut</a></li>
+          <li><a href="kelas_spa.html" class="w3-bar-item w3-button ">Kelas Beauty & Spa </a></li>
+	  </ul>
+	  
+	  <a href="#" class="w3-bar-item w3-button">Lain - Lain </a> 
+	  <ul>
+		  <li><a href="andriwo.html" class="w3-bar-item w3-button ">WorkShop Menjahit Andrie Wo</a></li>
+		  <li><a href="outbond.html" class="w3-bar-item w3-button ">Outbond</a></li>
+		  <li><a href="cross_pokjar.html" class="w3-bar-item w3-button ">Cross Pokjar</a></li>
+		  <li><a href="anniversary_laci.html" class="w3-bar-item w3-button ">Anniversary Laci</a></li>
+		  <li><a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button">Penutupan MS Bacth 9 </a></li>
+	  </ul>
+  </div>
+	
+	 
+<!-- Header -->
+<header class="w3-container w3-card-4  w3-white w3-center" style="padding:30px 16px">
+    <img src="images/new_logo.jpeg" width=100% height="500">
+</header>
+	
+<p><button class="w3-button w3-grey w3-block"></button></p>      
+
+<!-- First Grid -->
+<div class="w3-row">
+<!-- Menu Container -->
+<div class="w3-container w3-light-grey w3-center w3-card-4" id="menu">
+  <div class="w3-content  w3-light-grey">
+  <h2 class="w3-center " style="margin-bottom:20px">PROFILE DOSEN MANDIRI SAHABATKU</h2>
+	  <h4><p> Kesuksesan Program Mandiri Sahabatku tak lepas dari peran para dosen pembimbing  yang tak lelah berbagi ilmu , dan menumbuhkan semangat enterprenuer kepada kami. Untuk mengenal lebih dekat dengan beliau, disini kami hadirkan profile singkat dari Dosen2 Mandiri Sahabatku .</p></h4>
+  </div>
+ </div>
+	<br>
+<!--content1-->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak-dhani.jpg" width="100%" height="420px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Dhanie Irawan</strong> </i> </a>
+        
+    </div>
+
+    <div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> Dhanie Irawan </strong>adalah nama lengkap dari Dhanie yang sejak Januari 2018 bertugas sebagai Remittance Manager Bank Mandiri Hong Kong.</p>	
+		<p> Pria kelahiran Lumajang ini saat ini menjadi Pembina Kelompok Belajar Mandiri Sahabatku (Pokjar MS) Hong Kong binaan Bank Mandiri di Hong Kong.</p>
+		<p>Setelah menyelesaikan SMU di Jember, Dhanie melanjutkan kuliah di Institut Teknologi Bandung, Jurusan Kimia – Fakultas Matematika dan Ilmu Pengetahuan Alam.
+          Pada tahun 2007, Dhanie diterima sebagai Officer Development Program (ODP) Angkatan 32 di Bank Mandiri</p> 
+		 <p>Setelah menjalani masa training ODP selama 1 tahun, selanjutnya Dhanie bertugas di Batam selama 3 tahun.</p>
+        <p>Setelah menjalani masa penempatan awal di Batam, Dhanie sempat menjalankan tugas di Jakarta selama 5 tahun dimana 1 tahun terakhir menjadi Branch Manager di KCP Jakarta Suryopranoto.</p> 
+		
+		 <p>Kesempatan menjadi Remittance Manager di Hong Kong merupakan salah satu pengalaman yang sangat berharga dimana salah satu pengalaman berharga tersebut adalah menjadi Pembina Pokjar Mandiri Sahabatku, yang sejalan dengan spirit Bank Mandiri untuk memakmurkan negeri. Woman empowerment bagi Pekerja Migran Indonesia melalui program Mandiri Sahabatku diharapkan dapat memberikan motivasi dan landasan yang kuat bagi seluruh pesertanya sehingga dapat kembali ke Indonesia dengan modal finansial yang cukup dan pengetahuan yang mumpuni untuk berwirausaha, menjadi majikan di daerah masing-masing.</p>
+		
+		 <div class="w3-panel  w3-leftbar w3-grey">
+		<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> “Hampir menyerah” selalu ada di setiap cerita orang sukses. Namun mereka tetap semangat untuk mencapai kesuksesannya dan “bahagia” selalu mengikuti di akhir cerita. Terus semangat, terus belajar, terus berjuang, pasti berhasil !!</strong> </span>
+		</div>
+    </div>
+  </div>
+</div>
+	
+	<br>
+<p><button class="w3-button w3-light-grey w3-block"></button></p> 
+	
+		<br>
+<!--content2-->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_luqi.png" width="100%" height="420px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Luqi Bawafi II</strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> Luqi Bawafi,</strong> peraih penghargaan The Most Adaptable to Culture yang dianugerahkan oleh Water Wessex, Dorset, Inggris,</p> 
+        <p> Dikenal sebagai seorang trainer yang sangat mumpuni di kalangan buruh migran Indonesia (BMI) berkat perhatian yang sangat besar terhadap pemberdayaan perempuan terutama para BMI meskipun sejatinya dia seorang bankir dengan latar belakang disiplin ilmu marketing..</p>
+        <p> Luqi yang suka mengucapkan kalimat “opo ra kepenak, yo kepenak to!” memiliki kepribadian yang supel, mudah bergaul serta mampu memotivasi banyak orang sehingga makin banyak orang menyukainya.</p> 
+		
+		<p> Setelah menyelesaikan pendidikan sarjana di Universitas Negeri Malang pada 1993, dua tahun kemudian Luqi memulai karirnya sebagai seorang bankir di Bank Bumi Daya yang pada akhirnya merger menjadi Bank Mandiri pada tahun 1998.</p>
+        <p> Sebagai seorang bankir dia beberapa kali mengalami pindah tugas ke berbagai divisi dan daerah.</p> 
+        <p> Kemudian pada tahun 2004, dia melanjutkan pendidikan pasca sarjananya dengan mengambil  jurusan International Marketing Management di Bournemouth University, di Inggris. Selama menempuh program pasca sarjana, Luqi juga memboyong keluarganya ikutserta ke Inggris. </p>
+        <p> Pada tahun 2006, Luqi kembali ke Indonesia setelah meraih gelar Master of Art dengan predikat Distinction (Cumlaude) pada usianya yang ke 37 tahun.</p> 
+		
+		<p> Saat ini Luqi bertugas di Mandiri University sebagai seorang dosen dengan keahlian terutama bidang product development, sales & marketing, financial planning, entrepreneurship, creativity & innovation, pembinaan UKM dan pemberdayaaan perempuan. </p>
+        <p> Dan beberapa kali menjadi bintang tamu pada acara talkshow di berbagai stasiun radio seperti DBC 5 Hong Kong, Elshinta, RRI Pro 2 FM, PAS FM.  </p>
+		
+		<p> Sejak tahun 2011, Luqi sudah aktif mengajar dan melakukan pembinaan terhadap para BMI terutama di Hong Kong dan juga di negara Malaysia, Korea Selatan dan Jepang melalui Program Mandiri Sahabatku. </p> 
+        <p> Luqi juga telah sukses mengantarkan program Mandiri Sahabatku meraih  predikat Juara 1 pada event Mandiri Excellence Award (tahun 2013), </p>
+		
+		<p> dan  peraih Juara 1 se Asia Timur untuk kategori Social Empowerment (tahun 2015) yang dipersembahkan oleh  Asia Responsible Enterprise Awards (AREA) yang bermarkas di Malaysia.</p>
+      <p> Saat ini terdapat lebih dari 8.600 BMI yang telah mengikuti kuliah yang disampaikan oleh Luqi di negara-negara tersebut bahkan di antara para alumni telah sukses memiliki usaha yang dapat menjadi gantungan hidupnya di Indonesia.</p>
+			
+		 <div class="w3-panel  w3-leftbar w3-grey">
+		<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> <p> "Cita-cita yang tinggi bukanlah kunci kesuksesan; memiliki cita-cita yang tinggi adalah rahasia orang sukses".</p> </strong> </span>
+		</div>
+    </div>
+  </div>
+</div>  
+	
+	<br>
+<!--content3-->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_pakko.jpg" width="100%" height="420px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Sipakko M Nainggolan</strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> Sipakko Martua Nainggolan,</strong>  adalah nama lengkap dari Pakko,</p>
+      <p>Yang pernah bertugas sebagai Remittance Manager Bank Mandiri Hong Kong sejak Juli 2015 hingga Februari 2018.</p>
+      <p> Pria kelahiran Cirebon tahun 1980 ini turut membidani kelahiran Kelompok Belajar Mandiri Sahabatku (Pokjar MS) 
+		  BMI Hong Kong binaan Bank Mandiri di Hong Kong.</p> 
+    	<p> Setelah menyelesaikan SMU nya di Cirebon, Pakko melanjutkan kuliah di Universitas Indonesia Depok mengambil Jurusan Ilmu Administrasi Bisnis.Fakultas Ilmu Sosial dan Ilmu Politik (sekarang menjadi Fakultas Ilmu Administrasi) hingga lulus. </p>
+		<p>Begitu lulus Pakko langsung diterima Bank Mandiri melalui program Officer Development Program (ODP) Angkatan 20 tahun 2005,</p> 
+        <p>Hampir 7 tahun Pakko bertugas di Sumatera Bagian Utara mulai dari Kota Medan, Tanjung Balai Asahan hingga Pematang Siantar.</p>
+        <p>Sebelum bertugas di Hong Kong, Pakko menjadi Kepala Cabang Bank Mandiri di pinggiran kota Bandung di daerah industri Tekstil Rancaekek, </p>
+        <p> Disitulah beliau mengenal perempuan-perempuan pejuang keluarga sebagai buruh pabrik di industri tekstil Bandung.</p>
+      <p>Selama Bertugas di Hong Kong sejalan dengan Visi Bank Mandiri Memakmurkan Negeri melalui program Mandiri Sahabatku untuk memberdayakan 
+         perempuan Buruh Migran Indonesia di Hong Kong membangkitan motivasi sendiri bagi Pakko untuk mencurahkan seluruh energi dan pikirannya untuk membantu 
+         BMI dalam memaksimalkan kemampuan finansial dan soft skill ibu-ibu pejuang keluarga sebagai modal menjadi wirausaha pada waktunya nanti kembali ke Indonesia.</p>
+		
+    </div>
+  </div>
+</div>  
+	
+	
+	
+		<br>
+<!--content3-->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_wasis.png" width="100%" height="420px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Wasis Winardi </strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> BIODATA </strong>  
+			
+		<p> Nama : Wasis Winardi</p>
+      	<p> Ttl: Yogyakarta, 9 Mei 1966</p>
+      	<p> Nama Istri : Tri Suharmiati </p>
+		<p> Nama anak : Geraldi Giovanni</p>
+		
+		<p> <strong>KARIER : </strong> </p>
+		
+		<p><i class="fa fa-calendar">&nbsp; Tahun 1988 - 1989 :Auditor</i></p>
+		<p> <i class="fa fa-calendar">&nbsp;Tahun   1989 - 1999 :BBD Product Manager </i></p>
+		<p><i class="fa fa-calendar">&nbsp;Tahun 1999 - 2009 :  BM-Sales & Product Manager</i></p>
+		<p><i class="fa fa-calendar">&nbsp;Tahun 2009- Sekarang : Dosen & Learning Consultant</i></p>
+        
+        <br>
+      <p>Expert di bidang:</p>
+        <p>Product Development, Motivator,Remittance, Conselor Keluarga, Marketing & Sales.</p>
+		
+    </div>
+  </div>
+</div>  
+	
+	<br>
+<!--content3-->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_widya.jpg" width="100%" height="320px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Widya Rahadianto</strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> BIODATA </strong> 
+		<P>Nama : Widya Agus Rahadianto</P>
+		<P> Hobi : Sepeda, Jalan, Kuliner</P>
+		<P> Pendidikan : S1 Univ Jenderal Soedirman</P>
+		
+		<P><strong>PENGALAMAN KERJA : </strong></P>
+		<p><i class="fa fa-calendar">&nbsp; Tahun 1997 - Sekarang : Bank Mandiri</i></p>
+		<p> <i class="fa fa-suitcase" >&nbsp; Dosen MS </i></p>
+		<div class="w3-panel  w3-leftbar w3-grey">
+		<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> <p>  Kata2 motivasi : "Sekali berarti, sesudah itu mati" Maknanya = hidup hanya sekali, manfaatkan sebaik2nya utk kebaikan sesama. </p>  </strong> </span>
+		</div>
+      
+		
+    </div>
+  </div>
+</div>  
+	  
+	<br>
+<p><button class="w3-button w3-light-grey w3-block"></button></p> 
+	
+		<br>
+	
+<!--content3-->
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_sunu.jpg" width="100%" height="320px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Nu Sun Nu</strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> BIODATA </strong> 
+		<P>Nama :Sunu Raditya</P>
+		<p>	TTL: Jogja 1971	</p>	
+		<strong><p>PENGALAMAN KERJA:</p></strong>
+	  <i class="fa fa-calendar">&nbsp; Tahun 2010 - Sekarang : Dosen Mandiri University yang mendalami dunia Edukasi dan Learning Development.</i>
+		<br><br>
+		<strong><p> FOKUS PEMBELAJARAN :</p></strong>
+		 <i class ="fa fa-suitcase" >&nbsp;<b>Marketing</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Sales</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Produk Development</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Business Model</b></i>
+		
+	
+		<div class="w3-panel  w3-leftbar w3-grey">
+			
+		<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> <p> Kata motivasi : Stay... Will Die....Change It !!!  </p>  </strong> </span>
+		</div>
+      	
+    </div>
+  </div>
+</div> 
+	
+	<br>
+	
+	<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_fian.png" width="100%" height="320px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Fian Alfianto </strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> BIODATA </strong> 
+		<P>Nama : Achmad Alfianto </P>
+			
+		<strong><p>PENGALAMAN KERJA:</p></strong>
+		<p><i Class="fa fa-briefcase"> &nbsp; Dosen Mandiri Sahabatku </i></p>	
+		<p> <i class="fa fa-calendar">&nbsp; Tahun 2009 - Sekarang Bergabung dengan Bank Mandiri</i></p>
+		<br><br>
+		<strong><p> BIDANG TUGAS YANG  PERNAH DITEMPATI :</p></strong>
+		 <i class ="fa fa-suitcase" >&nbsp;<b>Costumer Service</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Service Quality</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Business Development</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Kepala Cabang</b></i>
+		   <br> <i class="fa fa-calendar">&nbsp;<b> Tahun 2014 - Sekarang Kepala Bagian Remittance wilayah malaysia dan Hongkong</b></i>
+		
+	
+		<div class="w3-panel  w3-leftbar w3-grey">
+			
+		<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> <p> Kata motivasi : Sukses itu pertemuan antara kesempatan dan kesiapan. Jangan sia-siakan waktu, persiapkan pengetahuan,kemampuan,modal dan tekad dari diri kita sebaik dan sedini mungkin sehingga ketika kesempatan datang akan membawa sukses bagi teman-teman.
+ 		</p>  </strong> </span>
+		</div>
+      	
+    </div>
+  </div>
+</div> 
+	
+	<br>
+	
+	<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/pak_heddy.png" width="100%" height="320px"></center>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"><strong>Heddy Friadi </strong> </i> </a>
+        
+    </div>
+	  
+	<div class="w3-twothird w3-card-4 w3-padding ">
+		<p><strong> BIODATA </strong> 
+		<P>Nama : Heddy Friadi </P>
+		 <p><i class="fa fa-calendar">&nbsp; TTL : Bogor 30 Oktober 1970</i></p>
+		<br>
+		<strong><p>PENGALAMAN KERJA:</p></strong>
+		<p><i Class="fa fa-briefcase"> &nbsp; Dosen Mandiri Sahabatku </i></p>	
+		<p> <i class="fa fa-calendar">&nbsp; Tahun 1997-1999 : bergabung dengan Legacy Bank Exim </i></p>
+		  <i class="fa fa-calendar">&nbsp;<b> Tahun 1999 - Sekarang Bergabung dengan Bank Mandiri</b></i>
+		
+		<br><br>
+		<strong><p> BIDANG TUGAS YANG  PERNAH DITEMPATI :</p></strong>
+		
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Produk Development & Business Development untuk untuk Funding, Kredit & Jasa.</b></i>
+		  <br> <i class="fa fa-suitcase">&nbsp;<b> Marketing dan Sales </b></i>
+		
+		 
+		
+		<div class="w3-panel  w3-leftbar w3-grey">
+			
+		<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> <p> Kata motivasi :Tetap semangat belajar & berusaha. Tidak ada kegagalan sejati kecuali berhenti belajar & berusaha.
+ 		</p>  </strong> </span>
+		</div>
+      	
+    </div>
+  </div>
+</div> 
+	
+	<br>
+	<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/bu_eka.png" width="85%" height="320px"></center>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"> Eka Fitria </i> </a>
+        
+    </div>
+
+ <div class="w3-twothird w3-card-4 w3-padding ">
+	 <p>BHSM (BMI Hong Kong Sadar Masa Depan) merupakan kelompok belajar binaan Mandiri Sahabatku yang sangat aktif dan kreatif dalam membuat program belajar mingguan yang memberikan nilai tambah bagi anggotanya.</p>
+	 <p>Beberapa hal yang sudah dilakukan dan saya harapkan dapat ditingkatkan adalah:</p>
+	 <p>Selalu semangat memberikan informasi kegiatan Pokjar bagi rekan2 BMI yang masih belum bergabung dalam Pokjar.</p><p></p>
+	 <p>Berikan hasil karya nyata yang positif untuk dapat dijadikan contoh baik bagi sesama anggota maupun bagi yang belum menjadi anggota.</p>
+	 <p>Selalu kompak dan tidak lelah dalam mengembangkan & menjalani program2 belajar.</p>
+	 <p>Tambah kreatif dalam mengemas materi maupun sesi belajar yang melibatkan peran aktif anggota.</p>
+   
+  </div>
+  </div>
+</div>
+	
+	<br>
+	<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-card-4 w3-center w3-padding">
+        <br>
+        <center><img src="images/bu_fitri.jpg" width="85%" height="320px"></center>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-facebook-official w3-hover-opacity"> Eka Fitria </i> </a>
+        
+    </div>
+	  
+<div class="w3-twothird w3-card-4 w3-padding ">
+
+        <br><b><h4>Fitri Wahyu Adihartati</h4></b>
+
+        <i class="fa fa-briefcase">&nbsp;Dosen Mandiri Sahabatku dan Teamsus</i><br>    
+
+      <i class="fa fa-calendar"> &nbsp;Tahun 1997 - 1999 Bergabung dengan Bank Mandiri.</i><br>
+
+        <i class="fa fa-calendar"> &nbsp;Tahun 1999 - sekarang</i>. 
+<br><br>
+       <p> Bidang tugas yang pernah di tempati ;</p>
+
+        <i class="fa fa-suitcase">&nbsp; <b>Product devepment and business development untuk funding,</b></i><br>
+
+        <i class="fa fa-suitcase">&nbsp;<b> Kredit dan Jasa</b></i><br>
+
+        <i class="fa fa-suitcase">&nbsp;<b> Marketing dan sales.</b></i><br><br>
+	
+<div class="w3-panel  w3-leftbar w3-grey">
+	<span class="w3-xlarge w3-border-grey w3-padding-20"><strong> 
+        <p>Kata Motivasi:  " Sebaik-baiknya hidup adalah hidup yang berarti untuk orang lain"</p>
+		</strong> </span>
+	</div>
+
+        <br>
+
+    </div>
+  
+ </div>
+</div>
+	</div>
+ 
+	
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-30">
+    <i class="fa fa-home w3-hover-opacity"> Markas Pokjar BHSM</i>
+    <h6 class="w3-margin ">MTR Tin Hau Exit A2</h6>
+    <h6 class="w3-margin ">Area Belakang Kolam Renang Victoria Park</h6>
+    <h6 class="w3-margin "> Causeway Bay</h6>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-30 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.facebook.com/search/top/?q=bhsm%20(bmi%20hongkong%20sadar%20masa%20depan)"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="kontak_kami.html"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+    <a href="https://myaccount.google.com/u/1/?pageId=none"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    
+ </div>
+ <p>copyrigth @Pokjar_BHSM.2018</p>
+</footer>
+
+<script>
+// Script for side navigation
+	var myIndex = 0;
+		carousel();
+		
+function w3_open() {
+    var x = document.getElementById("navDemo");
+	if ( x.className.indexOf ("w3-show" )== -1){
+		x.className += "w3-show"
+	}
+	else { x.className = x.className.replace("w3-show", "");
+		 }
+	
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+		
+		function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 6 seconds
+}
+		// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+	
+</script>
+
+</body>
+</html>
