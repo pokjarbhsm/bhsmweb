@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<title> Pokjar BHSM </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" style="images/jpg" href="images/logo_bhsm.jpg">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}	
+</style>
+    
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+
+  <div class="w3-bar w3-black w3-card">
+
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Beranda</a>
+
+    <a href="tentang_kami.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> Tentang BHSM</a>
+
+    <a href="kontak_kami.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kontak BHSM</a>
+      
+      <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PROFILE <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 
+		<a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a>
+      <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus </a>
+      
+    </div>
+  </div>
+	 
+	  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">PROFILE ALUMNI <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 
+		
+		<a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a>
+		<a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a>
+		<a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a>
+		<a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a>
+		<a href="damar.html" class="w3-bar-item w3-button">Markhamah </a>
+		<a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a>
+		<a href="martun.html" class="w3-bar-item w3-button">Martun </a>
+		
+		 </div>
+	 </div>
+      
+      <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Mandiri Sahabatku<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+		<a href="kelas_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas MS</a>
+		<a href="pokjar_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pokjar MS</a>
+		<a href="korwil_ms.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Korwil MS</a>
+		<a href="coding_mum.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coding Mum</a>
+		</div>
+	 </div>
+	 <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Kegiatan <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+	 	<a href="kelas_komputer.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Komputer</a>
+		<a href="kelas_jahit.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Menjahit</a>
+		<a href="kelas_makeup.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Make Up</a>
+		<a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kerajinan Monte</a>
+		<a href="kelas_rajut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Rajut</a>
+		<a href="kelas_kuliner.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Kuliner / Latbar </a>
+		<a href="kelas_bungasabun.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bunga Sabun</a>
+		<a href="kelas_bahasa_inggris.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Bahasa Inggris</a>
+		<a href="kelas_potongrambut.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kelas Potong Rambut</a>
+		
+	 </div>
+	 </div>
+      
+       <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Lain - Lain <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"> 	
+  		<a href="andriwo.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">WorkShop Menjahit Andrie Wo</a>
+		<a href="outbond.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Outbond</a>
+		<a href="cross_pokjar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Cross Pokjar</a>
+		<a href="anniversary_laci.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Anniversary Laci</a>
+		<a href="pdm.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">PDM</a>
+		<a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Penutupan MS Bacth 9 </a>
+	</div>
+	</div>
+ </div>
+	</div>
+    
+     <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+	  
+    <a href="tentang_kami.html" class="w3-bar-item w3-button">Tentang BHSM</a>
+    <a href="kontak_kami.html" class="w3-bar-item w3-button">Kontak BHSM</a>
+	  
+	  
+    <a href="#" class="w3-bar-item w3-button">PROFILE</a>
+	 <ul>
+		 <li> <a href="profile_dosen.html" class="w3-bar-item w3-button">Profile Dosen</a></li>
+		 <li> <a href="profile_pengurus.html" class="w3-bar-item w3-button">Profile Pengurus</a></li>		 		 
+	  </ul>
+	  
+	   <a href="#" class="w3-bar-item w3-button">PROFILE ALUMNI</a> 
+	  <ul>
+		  <li><a href="hayati.html" class="w3-bar-item w3-button">Hayati Riyanto </a></li>
+		  <li><a href="heny.html" class="w3-bar-item w3-button">Heny Lidyawati</a></li>
+		  <li><a href="wardani.html" class="w3-bar-item w3-button">Sri Wardhani </a></li>
+		  <li><a href="hepi_bakso.html" class="w3-bar-item w3-button">Suyanti </a></li>
+		  <li><a href="damar.html" class="w3-bar-item w3-button">Markhamah </a></li>
+		  <li><a href="nde.html" class="w3-bar-item w3-button">Tri Mulyani</a></li>
+		  <li><a href="martun.html" class="w3-bar-item w3-button">Martun </a></li>
+	  </ul>
+      
+      <a href="#" class="w3-bar-item w3-button">Mandiri Sahabatku</a>
+	  <ul>
+	  	<li> <a href="kelas_ms.html" class="w3-bar-item w3-button">Kelas MS</a></li>
+		 <li> <a href="pokjar_ms.html" class="w3-bar-item w3-button">Pokjar MS</a></li>
+		 <li> <a href="korwil_ms.html" class="w3-bar-item w3-button">Korwil MS</a></li>		
+	  	<li> <a href="coding_mum.html" class="w3-bar-item w3-button">Coding Mum </a></li>	
+	  </ul>
+	  
+	  <a href="#" class="w3-bar-item w3-button">Kegiatan</a> 
+	  <ul>
+		  <li><a href="kelas_komputer.html" class="w3-bar-item w3-button ">Kelas Komputer</a></li>
+		  <li><a href="kelas_jahit.html" class="w3-bar-item w3-button ">Kelas Menjahit</a></li>
+		  <li><a href="kelas_makeup.html" class="w3-bar-item w3-button ">Kelas Make Up</a></li>
+		  <li><a href="kelas_kerajinanmonte.html" class="w3-bar-item w3-button ">Kelas Kerajinan Monte</a></li>
+		  <li><a href="kelas_rajut.html" class="w3-bar-item w3-button ">Kelas Rajut</a></li>
+		  <li><a href="kelas_kuliner.html" class="w3-bar-item w3-button ">Kelas Kuliner / Latbar </a></li>
+		  <li><a href="kelas_bungasabun.html" class="w3-bar-item w3-button ">Kelas Bunga Sabun</a></li>
+		  <li><a href="kelas_bahasa_inggris.html" class="w3-bar-item w3-button ">Kelas Bahasa Inggris</a></li>
+		  <li><a href="kelas_potongrambut.html" class="w3-bar-item w3-button ">Kelas Potong Rambut</a></li>
+	  </ul>
+      
+      <a href="#" class="w3-bar-item w3-button">Lain - Lain </a> 
+	  <ul>
+		  <li><a href="andriwo.html" class="w3-bar-item w3-button ">WorkShop Menjahit Andrie Wo</a></li>
+		  <li><a href="outbond.html" class="w3-bar-item w3-button ">Outbond</a></li>
+		  <li><a href="cross_pokjar.html" class="w3-bar-item w3-button ">Cross Pokjar</a></li>
+		  <li><a href="anniversary_laci.html" class="w3-bar-item w3-button ">Anniversary Laci</a></li>
+		  <li><a href="pdm.html" class="w3-bar-item w3-button ">PDM</a></li>
+		  <li><a href="penutupan_ms_bacth9.html" class="w3-bar-item w3-button">Penutupan MS Bacth 9 </a></li>
+	  </ul>
+  </div>
+   
+	  
+ <br><br>
+<!-- Header -->
+    <header class="w3-container w3-center w3-padding-38 w3-grey">
+      
+    
+      <div class="w3-row-padding  w3-padding w3-container">  
+		 <img src="images/logo_rias4.jpeg" width=100% height="450">
+		  
+        </div>
+     
+</header>
+    
+ <!--First Grid-->   
+    <br> 
+<div class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+  
+   <div class="w3-container w3-padding-16 w3-light-grey"  >
+    <video width="100%" height="450" controls><source src="video/MUA.mp4" type="video/mp4"></video>  
+	   
+     </div>  
+</div> 
+	
+	 <br>
+   <div class="w3-row-padding w3-card-4 w3-background-light-grey w3-center " id="about">
+      <strong><h3> WISUDA KELAS MAKE UP 19 MEI 2019	</h3></strong>
+	   
+		
+	<br><br>	
+     <div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/darmi.jpg" alt="manten1" style="width:90%" height="380" class="w3-hover-opacity">
+		 <h4><p> Rias Pengantin Sunda Siger</p></h4>
+		 <h4><p> Perias : Darmi </p></h4>
+	</div>
+	
+	<div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/aniza.jpg" alt="manten2" style="width:85%" height="380" class="w3-hover-opacity">
+		<h4><p> Rias Pengantin Jogja Putri</p></h4>
+		<h4><p> Perias : Anisa</p></h4>
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/eli_makeup.jpg" alt="manten3" style="width:90%" height="380" class="w3-hover-opacity">
+		<h4><p> Rias Pengantin Solo Putri</p></h4>
+		<h4><p> Perias : Elly</p></h4>
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/ragil.jpg" alt="manten4" style="width:90%" height="380" class="w3-hover-opacity">
+		<h4><p>Rias Pengantin Paes Ageng</p></h4>
+		<h4><p> Perias : Ragil</p></h4>
+    </div>
+	</div>
+	
+	<br>
+	<div class="w3-row-padding w3-card-4 w3-background-light-grey w3-center " id="about">
+		<div class="w3-third w3-card-4 w3-padding">
+      <img src="images/magdalena.jpg" alt="manten3" style="width:90%" height="420" class="w3-hover-opacity">
+		<h4><p> Rias Pengantin Paes Ageng</p></h4>
+		<h4><p> Perias : Wadini</p></h4>
+    </div>
+		
+		
+		<div class="w3-third w3-card-4 w3-padding">
+      <img src="images/marya.jpg" alt="marya" style="width:90%" height="420" class="w3-hover-opacity">
+		<h4><p> Rias Pengantin Sunda Siger</p></h4>
+		<h4><p> Perias : Maryati</p></h4>
+    </div>
+		
+	<div class="w3-third w3-card-4 w3-padding">
+      <img src="images/utami.jpg" alt="manten4" style="width:90%" height="420" class="w3-hover-opacity">
+		<h4><p>Rias Pengantin Solo Basahan</p></h4>
+		<h4><p> Perias : Tri Utami</p></h4>
+    </div>		
+	</div>
+    
+    <br>
+   <div class="w3-row-padding w3-card-4 w3-background-light-grey w3-center " id="about">
+      <strong><h3> HASIL KREASI KELAS MAKE UP	</h3></strong>		
+		
+	<br><br>	
+     <div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/manten1.jpg" alt="manten1" style="width:90%" height="480" class="w3-hover-opacity">
+	</div>
+	
+	<div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/mjnrias.jpeg" alt="manten2" style="width:85%" height="480" class="w3-hover-opacity">
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/manten3.jpg" alt="manten3" style="width:90%" height="480" class="w3-hover-opacity">
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/manten4.jpg" alt="manten4" style="width:90%" height="480" class="w3-hover-opacity">	
+    </div>	
+	</div>
+	
+	
+  
+    <br><br>
+     <div class="w3-row-padding w3-card-4 w3-background-light-grey w3-center " id="about">
+     <div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/manten11.jpg" alt="manten11" style="width:90%" height="480" class="w3-hover-opacity">
+	</div>
+	
+	<div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/manten10.jpg" alt="manten10" style="width:85%" height="480" class="w3-hover-opacity">
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/manten9.jpg" alt="manten9" style="width:90%" height="480" class="w3-hover-opacity">
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/manten8.jpg" alt="manten8" style="width:90%" height="480" class="w3-hover-opacity">	
+    </div>
+		
+	</div>
+    <br><br>
+<!-- First Grid -->
+    <center> <strong><button class="w3-button w3-light-grey w3-padding-80px w3-large w3-margin-top"> Tutor Kelas Make Up Periode Th 2017</button></strong></center>
+    
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom w3-card-4 w3-padding">
+         <br><center><a href="https://www.facebook.com/dorayong.shui"> <img src="images/emon2.png" alt="emon2" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+           &nbsp;&nbsp;&nbsp; <button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'"> Dorayong Shui </button><br><br>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom w3-card-4 w3-padding">
+            <br><center><a href="https://www.facebook.com/nikita.phainten"><img src="images/nikita.png" alt="nikita" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Nikita </button><br>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom w3-card-4 w3-padding">
+           <br> <center><a href="https://www.facebook.com/andini.rayya"><img src="images/waki1.png" alt="waki1" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Waki </button><br>
+          </div>
+        </div>
+      </div>
+	<!-- slide show -->
+<div class="w3-content " style="max-width:50%;margin-top:30px;margin-bottom:30px;">
+   <div class="w3-container w3-card-4 w3-dark-grey w3-padding w3-xlarge"> 
+   <div class="w3-container w3-card-4 w3-light-grey w3-padding">
+		 
+    <div class="w3-display-container mySlides ">
+      <img src="images/ujian1.jpg" style="width:100% " height="300" >
+      <div class="w3-display-topleft w3-container w3-padding-32">
+        </div>
+		
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/ujian2.jpg" style="width:100%" height="300">
+      <div class="w3-display-middle w3-container w3-padding-32">
+     </div>
+    </div>
+         
+    <div class="w3-display-container mySlides">
+      <img src="images/ujian3.jpg" style="width:100%" height="300">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        
+      </div>
+    </div>
+	   
+	    <div class="w3-display-container mySlides">
+      <img src="images/ujian4.jpg" style="width:100%" height="300">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        
+      </div>
+    </div>
+         
+      <div class="w3-display-container mySlides">
+      <img src="images/rias11.jpg" style="width:100%" height="300">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        
+      </div>
+    </div>
+         
+       <div class="w3-display-container mySlides">
+      <img src="images/28mei.jpg" style="width:100%" height="300">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        
+      </div>
+    </div> 
+         
+     <div class="w3-display-container mySlides">
+      <img src="images/28mei3.jpg" style="width:100%" height="300">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        
+      </div>
+    	</div> 
+	   
+ </div>         
+</div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center w3-card-4 w3-padding">
+     <br><br> <center><img src="images/rias13.png" width="80%" heigth="250px"></center><br><br>
+    </div>
+
+    <div class="w3-twothird w3-card-4 w3-padding">
+      <br><center><img src="images/rias3.png" width="90%" ></center><br>
+    </div>
+  </div>
+</div>
+	
+	<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center w3-card-4 w3-padding">
+     <br><br> <center><img src="images/rias9.jpg" width="80%" heigth="250px"></center><br><br>
+    </div>
+
+    <div class="w3-twothird w3-card-4 w3-padding">
+      <br><center><img src="images/rias6.jpg" width="75%" ></center><br>
+    </div>
+  </div>
+	</div>
+
+	<br><br>
+		
+	<div class="w3-row-padding w3-card-4 w3-background-light-grey w3-center " id="about">
+			<h3> HASIL UJIAN KELAS MAKE-UP BACTH 1 : 28 MEI 2018	</h3>			
+		
+		
+     <div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/ujian1.jpg" alt="ujian1" style="width:100%" height="280" class="w3-hover-opacity">
+	</div>
+	
+	<div class="w3-quarter w3-card-4 w3-padding ">
+      <img src="images/ujian2.jpg" alt="ujian2" style="width:100%" height="280" class="w3-hover-opacity">
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/ujian3.jpg" alt="ujian3" style="width:100%" height="280" class="w3-hover-opacity">
+    </div>
+		
+	<div class="w3-quarter w3-card-4 w3-padding">
+      <img src="images/ujian4.jpg" alt="ujian4" style="width:100%" height="280" class="w3-hover-opacity">	
+    </div>
+		
+	</div>
+ 
+<br>
+	<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-card-4 w3-margin-bottom">
+            <center><a href="#"> <img src="images/ujian5.jpg" alt="ujian5" style="width:95%" class="w3-hover-opacity"></a></center>
+			
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-rigth" onclick="document.getElementById('ticketModal').style.display='block'">Perias : Khusnul </button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-card-4 w3-margin-bottom">
+          <center><a href="#"><img src="images/ujian6.jpg" alt="ujian6" style="width:90%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Perias : Setiawati </button>
+          </div>
+        </div>
+        
+        <div class="w3-third w3-card-4 w3-margin-bottom">
+          <center><a href="#"><img src="images/ujian7.jpg" alt="ujian7" style="width:65%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+        &nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Perias :Ismawati </button>
+     </div>
+    </div>
+    </div>
+		
+        <br>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+    
+		<div class="w3-third w3-card-4 w3-margin-bottom">
+          <center><a href="#"><img src="images/ujian9.jpg" alt="ujian9" style="width:65%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+        &nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Perias :Sri Maftukhatun Khasanah </button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-card-4 w3-margin-bottom">
+          <center><a href="#"><img src="images/28mei4.jpg" alt="28mei4" style="width:65%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+        &nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Perias : Farida </button>
+          </div>
+        </div>
+		
+		<div class="w3-third w3-card-4 w3-margin-bottom">
+          <center><a href="#"><img src="images/28mei5.jpg" alt="28mei5" style="width:65%" class="w3-hover-opacity"></a></center>
+          <div class="w3-container w3-white">
+            
+			  &nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'"> Perias  :Elly Khusnul Khotimah </button>
+          </div>
+        </div>
+      </div>
+    
+<div class="w3-container w3-grey w3-center w3-opacity w3-padding-38">
+    <i class="fa fa-home w3-hover-opacity"> Markas Pokjar BHSM</i>
+    <h6 class="w3-margin ">MTR Tin Hau Exit A2</h6>
+    <h6 class="w3-margin ">Area Belakang Kolam Renang Victoria Park</h6>
+    <h6 class="w3-margin "> Causeway Bay</h6>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-28 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-28 w3-card-4 w3-padding">
+	  <h4> Follow Us On :</h4>
+    <a href="https://www.facebook.com/groups/pokjarbhsm/  "><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="kontak_kami.html"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+    <a href="https://mail.google.com/mail/u/1/#inbox?compose=new"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <p>copyright @Pokjar_BHSM.2018</p>
+ </div>
+ 
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+	
+	
+</script>
+    </body>
+</html>
